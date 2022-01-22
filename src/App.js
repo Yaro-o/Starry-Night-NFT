@@ -303,7 +303,7 @@ function App() {
                   margin: "5px",
                 }}
               >
-                Telegram
+                FAQ
               </StyledButton>
 
               <StyledButton
