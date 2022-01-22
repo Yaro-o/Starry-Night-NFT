@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xef2976b9c6d1cb65060b7d5e9e8945da1f54df31",
+  "SCAN_LINK": "https://etherscan.io/address/0xef2976b9c6d1cb65060b7d5e9e8945da1f54df31",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "Starry Night NFT",
+  "SYMBOL": "STAR",
+  "MAX_SUPPLY": 365,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 0.05,
+  "GAS_LIMIT": 95000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/heisenberg--nft",
+  "SHOW_BACKGROUND": true
+}
