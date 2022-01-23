@@ -15,7 +15,7 @@ const truncate = (input, len) =>
   text-decoration: underline;
   border: none;
   background-color: var(--secondary-text);
-  padding: 10px;
+  padding: 5px;
   font-weight: bolder;
   font-size: 15px;
   color: var(--secondary);
@@ -281,7 +281,7 @@ function App() {
                   window.open("https://twitter.com/HeisenbergNFTs", "_blank");
                 }}
                 style={{
-                  margin: "5px",
+                  margin: "0px",
                   width: "65px",
                 }}
               >
@@ -293,7 +293,7 @@ function App() {
                   window.open("https://t.me/+A74GA5WCfTYyODdh", "_blank");
                 }}
                 style={{
-                  margin: "5px",
+                  margin: "0px",
                   width: "45px",
                 }}
               >
@@ -302,7 +302,7 @@ function App() {
               ∙
               <StyledButton
                 style={{
-                  margin: "5px",
+                  margin: "0px",
                   width: "85px",
                 }}
                 onClick={(e) => {
@@ -315,8 +315,8 @@ function App() {
 
               <StyledButton
                 style={{
-                  margin: "5px",
-                  width: "55px",
+                  margin: "0px",
+                  width: "85px",
                 }}
                 onClick={(e) => {
                   window.open(CONFIG.SCAN_LINK, "_blank");
@@ -362,7 +362,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Gas limit is set at 93,000 (~$30) to ensure the mint does not fail. 
+                  Gas limit is set at 93,000 (~$30) to ensure the mint does not fail.
                 </s.TextDescription>
 
                 <s.TextDescription
@@ -393,6 +393,10 @@ function App() {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
+                      }}
+                      style={{
+                        margin: "0px",
+                        width: "85px",
                       }}
                     >
                       CONNECT
