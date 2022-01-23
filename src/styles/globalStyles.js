@@ -56,7 +56,7 @@ export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 18px;
   font-weight: 100;
-  
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 `;
 
@@ -69,8 +69,9 @@ export const TextSubTitle = styled.p`
 
 export const TextDescription = styled.p`
   color: var(--primary-texta);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
 
   
   
