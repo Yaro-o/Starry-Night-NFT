@@ -10,7 +10,7 @@ const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
   export const StyledButton = styled.button`
-  padding: 10px;
+  padding: 5px;
   border-radius: 50px;
   text-decoration: underline;
   border: none;
@@ -19,8 +19,9 @@ const truncate = (input, len) =>
   font-weight: bolder;
   font-size: 15px;
   color: var(--secondary);
-  width: 100px;
+  width: 80px;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -269,16 +270,7 @@ function App() {
             >
               {data.numTokensMinted} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
-            <s.TextDescription2
-              style={{
-                textAlign: "center",
-                color: "var(--primary-text)",
-              }}
-            >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                Contract Address: {truncate(CONFIG.CONTRACT_ADDRESS,5)}
-              </StyledLink>
-            </s.TextDescription2>
+
             <span
               style={{
                 textAlign: "center",
@@ -290,25 +282,28 @@ function App() {
                 }}
                 style={{
                   margin: "5px",
+                  width: "65px",
                 }}
               >
                 Twitter
               </StyledButton>
-
+              ∙
               <StyledButton
                 onClick={(e) => {
                   window.open("https://t.me/+A74GA5WCfTYyODdh", "_blank");
                 }}
                 style={{
                   margin: "5px",
+                  width: "45px",
                 }}
               >
                 FAQ
               </StyledButton>
-
+              ∙
               <StyledButton
                 style={{
                   margin: "5px",
+                  width: "85px",
                 }}
                 onClick={(e) => {
                   window.open(CONFIG.MARKETPLACE_LINK, "_blank");
@@ -316,6 +311,20 @@ function App() {
               >
                 {CONFIG.MARKETPLACE}
               </StyledButton>
+              ∙
+
+              <StyledButton
+                style={{
+                  margin: "5px",
+                  width: "55px",
+                }}
+                onClick={(e) => {
+                  window.open(CONFIG.SCAN_LINK, "_blank");
+                }}
+              >
+                Etherscan
+              </StyledButton>
+
             </span>
             <s.SpacerSmall />
             {Number(data.numTokensMinted) >= CONFIG.MAX_SUPPLY ? (
