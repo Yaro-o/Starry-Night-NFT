@@ -278,7 +278,7 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://twitter.com/HeisenbergNFTs", "_blank");
+                  window.open("https://twitter.com/Starry_NightNFT", "_blank");
                 }}
                 style={{
                   margin: "0px",
@@ -290,7 +290,7 @@ function App() {
               ∙
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://t.me/+A74GA5WCfTYyODdh", "_blank");
+                  window.open("https://twitter.com/Starry_NightNFT/status/1485232119739822080?s=20", "_blank");
                 }}
                 style={{
                   margin: "0px",
