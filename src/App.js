@@ -362,7 +362,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Gas limit is set at 60,000 (~$13) to ensure the mint does not fail.
+                  Gas limit is set at 90,000 to ensure the mint does not fail.
                 </s.TextDescription>
 
                 <s.TextDescription
